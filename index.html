@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ====== SEO ====== -->
+  <title>Arshdeep Singh | Aspiring Frontend Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Arshdeep Singh, a self-learning aspiring frontend developer building clean, responsive websites with HTML, CSS and JavaScript.">
+  <meta name="keywords" content="frontend developer, portfolio, HTML, CSS, JavaScript, responsive web design, beginner developer">
+  <meta name="author" content="Arshdeep Singh">
+  <meta name="theme-color" content="#0b0f1a">
+
+  <!-- Open Graph (used when the link is shared on social media) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Arshdeep Singh | Aspiring Frontend Developer">
+  <meta property="og:description" content="A self-learning frontend developer building clean, responsive, user-friendly websites.">
+  <meta property="og:image" content="assets/images/og-image.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Arshdeep Singh | Aspiring Frontend Developer">
+  <meta name="twitter:description" content="A self-learning frontend developer building clean, responsive, user-friendly websites.">
+  <meta name="twitter:image" content="assets/images/og-image.png">
+
+  <!-- Favicon placeholder (replace assets/images/favicon.svg with your own icon) -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Font: Inter (falls back to system fonts if offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tells the CSS that JavaScript is available (used by the scroll animations) -->
+  <script>document.documentElement.classList.add("js");</script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ====== NAVIGATION ====== -->
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="#home" class="logo">Arshdeep Singh<span class="logo-dot">.</span></a>
+
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to light theme">
+          <span class="theme-icon" aria-hidden="true">☀</span>
+        </button>
+        <button class="icon-btn nav-toggle" id="nav-toggle" type="button"
+                aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ====== HERO ====== -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Welcome to my portfolio</p>
+          <h1 id="hero-title">Hi, I'm <span class="gradient-text">Arshdeep Singh</span></h1>
+          <p class="hero-subtitle">An Aspiring Frontend Developer</p>
+          <p class="hero-description">
+            I'm a self-learning frontend developer passionate about building clean, responsive, and user-friendly websites.
+            I enjoy turning ideas into functional web experiences while continuously improving my coding skills through practical projects.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Explore My Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+
+        <!-- Decorative code-window illustration (replace with your own photo if you like) -->
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="code-window">
+            <div class="code-window-bar">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="code-window-title">portfolio.js</span>
+            </div>
+            <pre class="code-window-body"><code><span class="c-key">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">role</span>: <span class="c-str">"Aspiring Frontend Dev"</span>,
+  <span class="c-prop">learning</span>: [<span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>, <span class="c-str">"JS"</span>],
+  <span class="c-prop">approach</span>: <span class="c-str">"Learn by building"</span>
+};</code></pre>
+          </div>
+          <div class="floating-chip chip-1">&lt;/&gt;</div>
+          <div class="floating-chip chip-2">{ }</div>
+          <div class="floating-chip chip-3">CSS</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== ABOUT ====== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Get to know me</p>
+          <h2 id="about-title" class="section-title">About Me</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm at the very beginning of my frontend development journey. I'm learning through practical projects,
+              and I enjoy creating websites and web applications that are clean, responsive, and easy to use.
+            </p>
+            <p>
+              I build with HTML, CSS, and JavaScript, and I write my code in Visual Studio Code.
+              I also use AI tools such as Claude to help me understand code and support my learning.
+            </p>
+            <p>
+              My goal is to keep improving my development skills and to build useful digital experiences,
+              one project at a time.
+            </p>
+          </div>
+
+          <aside class="info-card reveal" aria-label="Quick information">
+            <dl class="info-list">
+              <div class="info-item">
+                <dt>Role</dt>
+                <dd>Aspiring Frontend Developer</dd>
+              </div>
+              <div class="info-item">
+                <dt>Experience</dt>
+                <dd>Beginner / Personal Projects</dd>
+              </div>
+              <div class="info-item">
+                <dt>Learning Approach</dt>
+                <dd>Self-Learning</dd>
+              </div>
+              <div class="info-item">
+                <dt>Current Focus</dt>
+                <dd>Frontend Web Development</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SKILLS ====== -->
+    <section class="section section-alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">What I'm learning and using</p>
+          <h2 id="skills-title" class="section-title">Technologies &amp; Skills</h2>
+          <p class="section-subtitle">
+            These are the technologies I am learning and using in my practical projects.
+          </p>
+        </header>
+
+        <div class="skills-groups">
+
+          <!-- Group 1: Frontend -->
+          <div class="skill-group reveal">
+            <h3 class="skill-group-title">Frontend</h3>
+            <ul class="skill-grid">
+              <li class="skill-card">
+                <span class="skill-icon icon-html" aria-hidden="true">5</span>
+                <span class="skill-name">HTML5</span>
+              </li>
+              <li class="skill-card">
+                <span class="skill-icon icon-css" aria-hidden="true">3</span>
+                <span class="skill-name">CSS3</span>
+              </li>
+              <li class="skill-card">
+                <span class="skill-icon icon-js" aria-hidden="true">JS</span>
+                <span class="skill-name">JavaScript</span>
+              </li>
+              <li class="skill-card">
+                <span class="skill-icon icon-rwd" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="4" width="14" height="11" rx="2"></rect>
+                    <rect x="14" y="9" width="8" height="12" rx="2"></rect>
+                  </svg>
+                </span>
+                <span class="skill-name">Responsive Web Design</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Group 2: Development Tools -->
+          <div class="skill-group reveal">
+            <h3 class="skill-group-title">Development Tools</h3>
+            <ul class="skill-grid">
+              <li class="skill-card">
+                <span class="skill-icon icon-vscode" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                    <polyline points="16 6 22 12 16 18"></polyline>
+                  </svg>
+                </span>
+                <span class="skill-name">VS Code</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Group 3: Version Control -->
+          <div class="skill-group reveal">
+            <h3 class="skill-group-title">Version Control</h3>
+            <ul class="skill-grid">
+              <li class="skill-card">
+                <span class="skill-icon icon-git" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="6" cy="5" r="2"></circle>
+                    <circle cx="6" cy="19" r="2"></circle>
+                    <circle cx="18" cy="9" r="2"></circle>
+                    <path d="M6 7v10"></path>
+                    <path d="M18 11c0 4-6 3-12 6"></path>
+                  </svg>
+                </span>
+                <span class="skill-name">Git</span>
+              </li>
+              <li class="skill-card">
+                <span class="skill-icon icon-github" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                    <path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.02 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"></path>
+                  </svg>
+                </span>
+                <span class="skill-name">GitHub</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== PROJECTS ====== -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Practical work</p>
+          <h2 id="projects-title" class="section-title">My Projects</h2>
+          <p class="section-subtitle">
+            Eight projects I built while learning. Replace the placeholder screenshots and links with your own.
+          </p>
+        </header>
+
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="assets/screenshots/bmi-calculator.png" alt="Screenshot image for the BMI Calculator project" loading="lazy" width="640" height="400">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">BMI Calculator</h3>
+              <p class="project-description">A simple web application that calculates Body Mass Index based on height and weight.</p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a class="btn btn-primary btn-sm" href="https://YOUR-LIVE-DEMO-LINK.example/bmi-calculator" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a class="btn btn-outline btn-sm" href="https://github.com/arshdeepsinghml84-a11y/BMI-Calculator" target="_blank" rel="noopener noreferrer">GitHub Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="assets/screenshots/bmi-calculator-pro.png" alt="Screenshot image for the BMI Calculator Pro project" loading="lazy" width="640" height="400">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">BMI Calculator Pro</h3>
+              <p class="project-description">An enhanced BMI calculator with additional features and an improved user interface.</p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a class="btn btn-primary btn-sm" href="https://YOUR-LIVE-DEMO-LINK.example/bmi-calculator-pro" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a class="btn btn-outline btn-sm" href="https://github.com/arshdeepsinghml84-a11y/BMI-Calculator-Pro" target="_blank" rel="noopener noreferrer">GitHub Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="assets/screenshots/expense-tracker.png" alt="Screenshot image for the Expense Tracker project" loading="lazy" width="640" height="400">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Expense Tracker</h3>
+              <p class="project-description">A web application for recording expenses, tracking spending, and managing personal finances.</p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a class="btn btn-primary btn-sm" href="https://YOUR-LIVE-DEMO-LINK.example/expense-tracker" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a class="btn btn-outline btn-sm" href="https://github.com/arshdeepsinghml84-a11y/Ledger---Personal-Finance-Tracker" target="_blank" rel="noopener noreferrer">GitHub Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="assets/screenshots/business-landing-page.png" alt="Screenshot image for the Business Landing Page project" loading="lazy" width="640" height="400">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Business Landing Page</h3>
+              <p class="project-description">A modern landing page designed to present business information, services, and contact details.</p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">Responsive Design</li>
+              </ul>
+              <div class="project-links">
+                <a class="btn btn-primary btn-sm" href="https://YOUR-LIVE-DEMO-LINK.example/business-landing-page" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a class="btn btn-outline btn-sm" href="https://github.com/arshdeepsinghml84-a11y/Business-Landing-Page" target="_blank" rel="noopener noreferrer">GitHub Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="assets/screenshots/gym-website.png" alt="Screenshot image for the Gym Website project" loading="lazy" width="640" height="400">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Gym Website</h3>
+              <p class="project-description">A responsive gym website featuring fitness services, membership information, and attractive sections.</p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">Responsive Design</li>
+              </ul>
+              <div class="project-links">
+                <a class="btn btn-primary btn-sm" href="https://YOUR-LIVE-DEMO-LINK.example/gym-website" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a class="btn btn-outline btn-sm" href="https://github.com/arshdeepsinghml84-a11y/Gym-Website" target="_blank" rel="noopener noreferrer">GitHub Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="assets/screenshots/restaurant-website.png" alt="Screenshot image for the Restaurant Website project" loading="lazy" width="640" height="400">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Restaurant Website</h3>
+              <p class="project-description">A restaurant website showcasing its menu, services, and essential business information.</p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">Responsive Design</li>
+              </ul>
+              <div class="project-links">
+                <a class="btn btn-primary btn-sm" href="https://YOUR-LIVE-DEMO-LINK.example/restaurant-website" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a class="btn btn-outline btn-sm" href="https://github.com/arshdeepsinghml84-a11y/Restaurant-Website" target="_blank" rel="noopener noreferrer">GitHub Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 7 -->
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="assets/screenshots/school-website.png" alt="Screenshot image for the School Website project" loading="lazy" width="640" height="400">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">School Website</h3>
+              <p class="project-description">A school website presenting educational information, facilities, activities, and contact details.</p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">Responsive Design</li>
+              </ul>
+              <div class="project-links">
+                <a class="btn btn-primary btn-sm" href="https://YOUR-LIVE-DEMO-LINK.example/school-website" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a class="btn btn-outline btn-sm" href="https://github.com/arshdeepsinghml84-a11y/School-Website" target="_blank" rel="noopener noreferrer">GitHub Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 8 -->
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="assets/screenshots/personal-portfolio.png" alt="Screenshot image for the Personal Portfolio Website project" loading="lazy" width="640" height="400">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Personal Portfolio Website</h3>
+              <p class="project-description">A personal portfolio website showcasing my development journey, skills, and practical projects.</p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a class="btn btn-primary btn-sm" href="https://YOUR-LIVE-DEMO-LINK.example/personal-portfolio" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a class="btn btn-outline btn-sm" href="https://github.com/arshdeepsinghml84-a11y/My-Portfolio" target="_blank" rel="noopener noreferrer">GitHub Code</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== LEARNING JOURNEY ====== -->
+    <section class="section section-alt" id="journey" aria-labelledby="journey-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Always growing</p>
+          <h2 id="journey-title" class="section-title">My Learning Journey</h2>
+        </header>
+
+        <ul class="journey-grid">
+          <li class="journey-card reveal">
+            <span class="journey-number" aria-hidden="true">01</span>
+            <p>Learning frontend development independently.</p>
+          </li>
+          <li class="journey-card reveal">
+            <span class="journey-number" aria-hidden="true">02</span>
+            <p>Practicing HTML, CSS, and JavaScript.</p>
+          </li>
+          <li class="journey-card reveal">
+            <span class="journey-number" aria-hidden="true">03</span>
+            <p>Building real-world inspired projects.</p>
+          </li>
+          <li class="journey-card reveal">
+            <span class="journey-number" aria-hidden="true">04</span>
+            <p>Learning to use Git and GitHub.</p>
+          </li>
+          <li class="journey-card reveal">
+            <span class="journey-number" aria-hidden="true">05</span>
+            <p>Improving website design and responsiveness.</p>
+          </li>
+          <li class="journey-card reveal">
+            <span class="journey-number" aria-hidden="true">06</span>
+            <p>Exploring new frontend development techniques.</p>
+          </li>
+        </ul>
+
+        <blockquote class="journey-quote reveal">
+          "I believe in learning by building. Every project helps me understand something new and become a better developer."
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ====== CONTACT ====== -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Say hello</p>
+          <h2 id="contact-title" class="section-title">Let's Connect</h2>
+          <p class="section-subtitle">
+            I'm always interested in learning, improving, and connecting with people who share an interest in web development.
+          </p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <ul class="contact-list">
+              <li>
+                <span class="contact-label">Email</span>
+                <a href="mailto:arshdeepsinghml84@gmail.com">arshdeepsinghml84@gmail.com</a>
+              </li>
+              <li>
+                <span class="contact-label">GitHub</span>
+                <a href="https://github.com/arshdeepsinghml84-a11y" target="_blank" rel="noopener noreferrer">github.com/arshdeepsinghml84-a11y</a>
+              </li>
+              <li>
+                <span class="contact-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/YOUR-USERNAME" target="_blank" rel="noopener noreferrer">linkedin.com/in/YOUR-USERNAME</a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form reveal" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" placeholder="Your name" required>
+              <p class="error-message" id="name-error" role="alert"></p>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+              <p class="error-message" id="email-error" role="alert"></p>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
+              <p class="error-message" id="subject-error" role="alert"></p>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+              <p class="error-message" id="message-error" role="alert"></p>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <a href="#home" class="logo">Arshdeep Singh<span class="logo-dot">.</span></a>
+        <p>An aspiring frontend developer learning by building clean, responsive websites.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <h2 class="footer-heading">Quick Links</h2>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-social">
+        <h2 class="footer-heading">Find Me Online</h2>
+        <ul>
+          <li><a href="https://github.com/arshdeepsinghml84-a11y" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/YOUR-USERNAME" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year">2026</span> Arshdeep Singh. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Small message box used by script.js -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

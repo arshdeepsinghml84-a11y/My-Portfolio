@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" role="img" aria-label="Placeholder for Personal Portfolio Website screenshot">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9333ea"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="#10152a"/>
+  <rect width="640" height="400" fill="url(#g)" opacity="0.22"/>
+  <rect x="60" y="56" width="520" height="288" rx="14" fill="#141a2e" stroke="#ffffff" stroke-opacity="0.12"/>
+  <circle cx="86" cy="80" r="5" fill="#ff5f57"/>
+  <circle cx="104" cy="80" r="5" fill="#febc2e"/>
+  <circle cx="122" cy="80" r="5" fill="#28c840"/>
+  <rect x="84" y="108" width="200" height="14" rx="7" fill="url(#g)"/>
+  <rect x="84" y="136" width="300" height="9" rx="4.5" fill="#ffffff" opacity="0.18"/>
+  <rect x="84" y="154" width="260" height="9" rx="4.5" fill="#ffffff" opacity="0.12"/>
+  <rect x="84" y="186" width="140" height="130" rx="10" fill="#ffffff" opacity="0.07"/>
+  <rect x="240" y="186" width="140" height="130" rx="10" fill="#ffffff" opacity="0.07"/>
+  <rect x="396" y="186" width="164" height="130" rx="10" fill="url(#g)" opacity="0.35"/>
+  <text x="320" y="378" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#9aa3bd">Screenshot placeholder - Personal Portfolio Website</text>
+</svg>
