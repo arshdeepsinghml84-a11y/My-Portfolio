@@ -1,86 +1,95 @@
 # My Frontend Developer Portfolio
 
-A responsive personal portfolio website built with **HTML5, CSS3 and vanilla JavaScript**.
-It presents me honestly as a self-learning, aspiring frontend developer and showcases eight practical projects.
+## Description
 
-## Project structure
+A responsive, dark-themed personal portfolio website that presents me as an aspiring, self-learning frontend developer. It shows who I am, the technologies I am learning, and eight practical projects I have built while learning.
 
-```
+It is useful for anyone who wants to see my work, such as people interested in my learning journey, potential clients or employers. It gives them one clear page to see my projects, skills and contact details.
+
+## Features
+
+- Sticky navigation bar with smooth scrolling to each section
+- Mobile hamburger menu that opens and closes (also closes with the Escape key and after tapping a link)
+- Active navigation link that highlights the section currently on screen
+- Dark theme by default, with a light/dark theme toggle that remembers the visitor's choice
+- Hero section with a decorative code-window illustration
+- About Me section with a quick information card
+- Technologies & Skills section, grouped into Frontend, Development Tools and Version Control (no fake percentages)
+- Projects section with 8 project cards in a responsive grid (1, 2 or 3 columns depending on screen size)
+- My Learning Journey section
+- Contact section with form validation for name, email, subject and message
+- Gentle scroll-reveal animations (turned off automatically for visitors who prefer reduced motion)
+- Accessibility basics: semantic HTML, skip link, keyboard focus styles, image alt text
+- SEO basics: page title, meta description, Open Graph and Twitter Card tags, favicon
+- Placeholder links show a friendly reminder message instead of opening a broken page
+
+**Note:** the contact form only validates input. It does **not** send emails, because no email service or backend is connected.
+
+## Technologies Used
+
+- HTML5
+- CSS3 (CSS variables, Grid, Flexbox, media queries)
+- Vanilla JavaScript (no frameworks or libraries)
+- Google Fonts (Inter), loaded from the internet; the site falls back to system fonts if it is unavailable
+
+## Project Structure
+
+```text
 my-portfolio/
-├── index.html          -> the page content (structure)
-├── css/style.css       -> all the styling and responsive rules
-├── js/script.js        -> menu, theme toggle, animations, form validation
 ├── assets/
-│   ├── images/         -> favicon and social-share image
-│   ├── icons/          -> put your own icons here (optional)
-│   └── screenshots/    -> project screenshots (currently placeholders)
+│   ├── icons/
+│   ├── images/
+│   │   ├── favicon.svg
+│   │   ├── og-image.png
+│   │   └── og-image.svg
+│   └── screenshots/
+│       └── (8 placeholder project images, .svg)
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── index.html
 ├── README.md
 └── .gitignore
 ```
 
-## Run it locally
+## How to Run
+
+This is a plain HTML, CSS and JavaScript project. It needs no installation, npm or build step.
 
 1. Open the `my-portfolio` folder in Visual Studio Code.
-2. Double-click `index.html` to open it in your browser, or install the **Live Server** extension and click "Go Live".
+2. Open `index.html` in your browser by double-clicking it, or right-click it in VS Code and choose "Reveal in File Explorer" / "Reveal in Finder" and open it from there.
 
-## What to replace first
+Optional: install the **Live Server** extension in VS Code, right-click `index.html` and choose "Open with Live Server" to have the page refresh automatically when you save changes.
 
-Open `index.html` and use **Ctrl + F** (Find) to locate each placeholder:
+## Usage
 
-| Search for | Replace with |
-|---|---|
-| `[YOUR NAME]` | Your real name (appears in the title, logo, hero, footer and meta tags) |
-| `YOUR-USERNAME` | Your GitHub username (and LinkedIn username in the LinkedIn links) |
-| `YOUR-LIVE-DEMO-LINK.example/...` | The real live demo URL of each project |
-| `your-email@example.com` | Your real email address |
+- Use the navigation bar (or the hamburger menu on phones) to jump to a section.
+- Use the sun/moon button in the header to switch between dark and light themes.
+- Browse the project cards. The **Live Demo** and **GitHub Code** buttons are placeholders until real links are added in `index.html`.
+- Fill in the contact form to see the validation messages. The form does not send a message yet.
 
-Until you replace them, clicking a placeholder link shows a small reminder message instead of opening a broken page.
+## Screenshots
 
-## Changing colors, fonts and images
+The project cards currently use placeholder images from `assets/screenshots/`. Screenshots of the full website have not been added yet.
 
-- **Colors:** edit the variables at the top of `css/style.css` (`--accent`, `--accent-2`, `--bg`, ...).
-- **Font:** change the Google Fonts `<link>` in `index.html` and the `--font` variable in `style.css`.
-- **Project screenshots:** save your screenshot (PNG or JPG, about 1280x800) in `assets/screenshots/` and change the `src` of that project's `<img>`, e.g. `src="assets/screenshots/my-gym-site.png"`. Update the `alt` text too.
-- **Social share image:** replace `assets/images/og-image.png` (recommended 1200x630).
-- **Favicon:** replace `assets/images/favicon.svg`.
+<!-- Add a screenshot of the finished website here, for example:
+![Portfolio homepage](assets/images/portfolio-screenshot.png)
+-->
 
-## Adding a new project
+## Live Demo
 
-In `index.html`, copy one whole `<article class="project-card reveal"> ... </article>` block inside the projects grid, paste it after the last one, and change the image, title, description, tags and the two links.
+Live Demo: Not deployed yet
 
-## Connecting the contact form
+## Future Improvements
 
-**The form currently does not send emails.** It only checks that the fields are filled in correctly, then shows a message saying nothing was sent. A website running only on GitHub Pages has no server, so you need an email service. Two beginner-friendly options:
+- Replace the placeholder screenshots with real screenshots of each project
+- Add the real live demo and GitHub links for every project
+- Connect the contact form to an email service such as Formspree or EmailJS
+- Add a real photo or illustration in the hero section
+- Add a downloadable resume or CV section once I have one
+- Add project filtering (for example, by technology)
 
-**Option A: Formspree**
-1. Create a free account at formspree.io and make a new form to get your form URL.
-2. In `index.html`, change `<form class="contact-form" id="contact-form" novalidate>` to include `action="YOUR_FORMSPREE_URL" method="POST"`.
-3. In `js/script.js`, replace the demo code after the validation check with a `fetch()` call that posts the form data to that URL (Formspree's documentation shows the exact code), and update the success message.
+## Author
 
-**Option B: EmailJS**
-1. Create a free account at emailjs.com and connect your email.
-2. Follow their JavaScript guide to add their script and call `emailjs.sendForm(...)` after the validation check in `js/script.js`.
-
-Check each service's current free-plan limits and instructions before relying on them.
-
-## Publish with GitHub Pages
-
-1. Create a free account at github.com and create a new **public** repository (for example `my-portfolio`).
-2. Upload your files: with Git installed, run these in the project folder:
-   ```
-   git init
-   git add .
-   git commit -m "Add portfolio website"
-   git branch -M main
-   git remote add origin https://github.com/YOUR-USERNAME/my-portfolio.git
-   git push -u origin main
-   ```
-3. On GitHub open the repository, then **Settings -> Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**, select **main** and the **/ (root)** folder, then **Save**.
-5. After a minute or two your site is live at `https://YOUR-USERNAME.github.io/my-portfolio/`.
-
-After the site is live, update the Open Graph image to a full URL if you want link previews on social media to work (for example `https://YOUR-USERNAME.github.io/my-portfolio/assets/images/og-image.png`).
-
-## Honest note
-
-This portfolio shows an aspiring developer's personal learning projects. It makes no claims of professional experience, certificates or advanced skill levels, and it should stay that way.
+Created by Arshdeep Singh
