@@ -79,7 +79,7 @@ The project cards currently use placeholder images from `assets/screenshots/`. S
 
 ## Live Demo
 
-Live Demo: Not deployed yet
+Live Demo: https://my-portfolio-zfyd.netlify.app/
 
 ## Future Improvements
 
